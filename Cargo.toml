@@ -2,5 +2,29 @@
 name = "MultiPing"
 version = "0.1.0"
 edition = "2021"
+authors = ["Joaquin Bejar <jb@taunais.com>"]
+description = "Multiping: A concurrent Rust tool to monitor multiple IPs with real-time statistics using custom ping intervals."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/joaquinbejar/multiping"
+homepage = "https://github.com/joaquinbejar/multiping"
+
+include = [
+    "src/**/*.rs",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE",
+    "examples/**/*.rs",
+    "tests/**/*.rs",
+    "Makefile",
+    "rust-toolchain.toml",
+    "Draws/**/*.png",
+    "Docker/**/*.Dockerfile",
+    "Docker/**/*.yml",
+]
 
 [dependencies]
+
+
+[dev-dependencies]
+
