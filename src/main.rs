@@ -17,7 +17,7 @@ fn ping(ip: String, stats: Stats) {
             .arg(&ip)
             .output();
 
-        let success = output.map_or(false, |o| o.status.success());
+        let success = output.is_ok_and(|o| o.status.success());
 
         let mut stats_guard = stats.lock().unwrap();
         let entry = stats_guard.entry(ip.clone()).or_insert((0, 0, 0));
