@@ -1,6 +1,6 @@
 [package]
 name = "MultiPing"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Joaquin Bejar <jb@taunais.com>"]
 description = "Multiping: A concurrent Rust tool to monitor multiple IPs with real-time statistics using custom ping intervals."
